@@ -9,10 +9,18 @@ const addToList = () => {
   let newLi = document.createElement("li");
   let text = document.createTextNode(userInput);
   if (userInput !== "") {
-    let bgColor = `#${colorGenerator()}`;
     newLi.appendChild(text);
-    newLi.style.backgroundColor = `${bgColor}`;
     document.querySelector(".result").appendChild(newLi);
     document.querySelector("#userText").value = "";
+  }
+  let totalItems = document.querySelectorAll("li");
+  let length = 0;
+  totalItems.forEach((element) => {
+    length++;
+  });
+  console.log(length);
+  if (length % 2 !== 0) {
+    let bgColor = `#${colorGenerator()}`;
+    newLi.style.backgroundColor = `${bgColor}`;
   }
 };
