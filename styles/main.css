@@ -4,10 +4,17 @@
   box-sizing: border-box;
 }
 
+:root {
+  font-family: futura, helvetica, sans-serif;
+}
+
 .container {
   width: 100%;
   height: 100vh;
   padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .result {
@@ -15,6 +22,29 @@
 }
 .result li {
   margin-left: 1rem;
+}
+
+button {
+  padding: 0.5rem;
+  background-color: #79bbdd;
+  border: 1px solid #111;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-left: 1rem;
+}
+
+button:hover {
+  background-color: #2265ac;
+  transition: 500ms ease-in-out;
+}
+
+.button {
+  margin-top: 1rem;
+}
+
+input {
+  font-size: 1rem;
+  padding: 0.5rem;
 }
 
 /*# sourceMappingURL=main.css.map */
