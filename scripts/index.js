@@ -15,7 +15,7 @@ const addToList = () => {
   document.querySelector(".result").appendChild(newLi);
   document.querySelector("#userText").value = "";
   let span = document.createElement("button");
-  let closeText = document.createTextNode("x");
+  let closeText = document.createTextNode("X");
   span.className = "close";
   span.appendChild(closeText);
 
@@ -37,6 +37,7 @@ const addToList = () => {
 const reColor = () => {
   let oddItems = document.querySelectorAll("li:nth-child(odd)");
   let evenItems = document.querySelectorAll("li:nth-child(even)");
+
   oddItems.forEach((element) => {
     let bgColor = `#${colorGenerator()}`;
     element.style.backgroundColor = `${bgColor}`;

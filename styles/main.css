@@ -21,13 +21,30 @@
   padding-top: 2rem;
 }
 .result li {
-  margin-left: 1rem;
   padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-right: 1px solid #333;
+  border-left: 1px solid #333;
+}
+.result li:first-child {
+  border-top: 1px solid #333;
+}
+.result li:last-child {
+  border-bottom: 1px solid #333;
 }
 
 .close {
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  justify-content: center;
   padding: 0.5rem;
-  margin-left: 3rem;
+  border-radius: 50%;
+  background-color: transparent;
+  line-height: 1rem;
+  border: none;
 }
 .close:hover {
   background-color: #e73a33;
@@ -45,6 +62,7 @@ button {
 button:hover {
   background-color: #2265ac;
   transition: 500ms ease-in-out;
+  cursor: pointer;
 }
 
 .button {
