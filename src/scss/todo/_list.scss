@@ -2,5 +2,14 @@
   padding-top: 2rem;
   li {
     margin-left: 1rem;
+    padding: 0.5rem;
+  }
+}
+
+.close {
+  padding: 0.5rem;
+  margin-left: 3rem;
+  &:hover {
+    background-color: #e73a33;
   }
 }
