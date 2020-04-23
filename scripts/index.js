@@ -18,9 +18,30 @@ const addToList = () => {
   totalItems.forEach((element) => {
     length++;
   });
-  console.log(length);
   if (length % 2 !== 0) {
     let bgColor = `#${colorGenerator()}`;
     newLi.style.backgroundColor = `${bgColor}`;
   }
+  let span = document.createElement("button");
+  let closeText = document.createTextNode("x");
+  span.className = "close";
+  span.appendChild(closeText);
+  console.log(span);
+
+  let listAll = document.querySelectorAll("li");
+  listAll.forEach((item) => {
+    item.appendChild(span);
+  });
+  let closeButtons = document.querySelectorAll(".close");
+
+  closeButtons.forEach((button) => {
+    button.addEventListener("click", closeIt, false);
+  });
+  console.log(closeButtons);
+};
+
+const closeIt = () => {
+  console.log("close");
+  console.log(document.activeElement.parentNode);
+  document.activeElement.parentNode.style.display = "none";
 };

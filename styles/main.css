@@ -25,6 +25,14 @@
   padding: 0.5rem;
 }
 
+.close {
+  padding: 0.5rem;
+  margin-left: 3rem;
+}
+.close:hover {
+  background-color: #e73a33;
+}
+
 button {
   padding: 0.5rem;
   background-color: #79bbdd;
