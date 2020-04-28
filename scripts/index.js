@@ -53,3 +53,11 @@ const closeIt = () => {
   document.activeElement.parentNode.remove();
   reColor();
 };
+
+function keyUpFunction(e) {
+  if (e.code == "Enter") {
+    addToList();
+  }
+}
+let userInput = document.querySelector("#userText");
+userInput.addEventListener("keyup", keyUpFunction);
